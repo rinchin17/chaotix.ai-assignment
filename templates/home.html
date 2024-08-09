@@ -1,0 +1,51 @@
+{% load static  %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <p>
+                    Chaotix.AI Assignment
+                </p>
+            </div>
+            <div class="main">
+                <div class="left">
+                    <p class="left-info">Enter your three prompts</p>
+                    <form action="">
+                        <div class="prompts">
+                            <p class="label">prompt 1:</p>
+                            <textarea id="p1" type="text" placeholder="prompt1" required>A red flying dog</textarea>
+                            <p class="label">prompt 2:</p>
+                            <textarea id="p2" type="text" placeholder="prompt2" required>A piano ninja</textarea>
+                            <p class="label">prompt 3:</p>
+                            <textarea id="p3" type="text" placeholder="prompt3" required>A footballer kid</textarea>
+                        </div>
+                        <div class="btn-cover">
+                            <button class="btn" id="btn" type="button">Generate</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="right">
+                    <div class="image-grid">
+                        <img id="img1" src="{% static 'images/Image 1.png' %}" alt="">
+                        <img id="img2" src="{% static 'images/Image 2.png' %}" alt="">
+                        <img id="img3" src="{% static 'images/Image 3.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
