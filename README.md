@@ -32,7 +32,7 @@ $cd chaotix.ai-assignment
 Checkout to the master branch:
 
 ```sh
-$git branch master
+$git checkout master
 ```
 
 Create a virtual environment to install dependencies in and activate it:
