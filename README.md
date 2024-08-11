@@ -25,6 +25,15 @@ The first thing to do is to clone the repository:
 ```sh
 $ git clone https://github.com/rinchin17/chaotix.ai-assignment.git
 ```
+Enter the project directory:
+```sh
+$cd chaotix.ai-assignment
+```
+Checkout to the master branch:
+
+```sh
+$git branch master
+```
 
 Create a virtual environment to install dependencies in and activate it:
 
