@@ -46,7 +46,6 @@ Create a virtual environment to install dependencies in and activate it:
 ```sh
 $ python -m venv env
 $ source env/bin/activate
-(env)$ pip install -r requirements.txt
 ```
 
 Then install the dependencies:
