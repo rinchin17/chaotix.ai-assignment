@@ -92,3 +92,30 @@ In another tab/terminal, activate the virtual environment and enter the project 
  $ source env/bin/activate
 (env)$ celery -A image_generator worker -l INFO
 ```
+
+## Bonus Task (Storing images, metadata to database)
+
+Once the images are generated, the images are being stored in the Project's /media/images directory.
+The metadata is also being stored to the Django Database (SQLite) at the same time.
+
+## Database Models
+This is the database model I have used to store the image and its metadata.
+```sh
+Image-
+  prompt - CharField
+  file_name - CharField
+  image - ImageField (using Pillow)
+  created_at - DateTimeField
+  updated_at - DateTimeField
+```
+
+This can be viewed using the Django Admin:
+
+1. Create a Django Admin account:
+   ```sh
+   (env)$ django-admin createsuperuser
+   ```
+   Enter the details as asked.
+2. Navigate to 127.0.0.1:8000/admin and enter the username and password you created in the earlier step.
+3. You will be able to see the Images Model, click on it to see the Images and its stored metadata.
+
