@@ -29,6 +29,12 @@ Enter the project directory:
 ```sh
 $cd chaotix.ai-assignment
 ```
+
+Fetch the branch information:
+```sh
+$git fetch
+```
+
 Checkout to the master branch:
 
 ```sh
