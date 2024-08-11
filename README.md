@@ -43,12 +43,12 @@ session operates in a virtual environment
 
 Create a .env file in the root of the project:
 1. Contents of the .env file should be:
-
-   SECRET_KEY=your_django_secret_key
-   STABILITY_API_KEY=your_api_key
-   STABILITY_API_HOST=stability_api_host
-   CELERY_BROKER_URL=redis://localhost:6379
-
+```sh
+SECRET_KEY=your_django_secret_key
+STABILITY_API_KEY=your_api_key
+STABILITY_API_HOST=stability_api_host
+CELERY_BROKER_URL=redis://localhost:6379
+```
 3. A file named env-example has been provided for reference
 
 Once done, migrate the changes in database :
